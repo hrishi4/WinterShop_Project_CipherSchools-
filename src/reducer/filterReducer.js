@@ -1,4 +1,4 @@
-import { toastMessage } from "../utils/toastMessage";
+
 import {
   RATING_FILTER,
   CATEGORY_FILTER,
@@ -204,7 +204,8 @@ const filterReducer = (productsState, action) => {
         ...productsStateCopy,
         default: productsStateCopy.products,
       };
-      toastMessage("INFO", "Product removed from cart");
+
+     
       break;
 
     case MOVE_TO_CART:
@@ -229,7 +230,8 @@ const filterReducer = (productsState, action) => {
         ...productsStateCopy,
         default: productsStateCopy.products,
       };
-      toastMessage("SUCCESS", "Product moved to cart");
+     
+   
       break;
 
     case INC_CART_COUNT:
